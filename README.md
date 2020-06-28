@@ -1,5 +1,5 @@
 ### Update
-2020-06-29 repo created.
+6/29: **part0** exercise completed. Please open directory part0 and see the results.
 
 ### Description
 This is a repository for submitting exercises in `Full Stack Open 2020` course of University of Helsinki. It's an online course and the site is here:
