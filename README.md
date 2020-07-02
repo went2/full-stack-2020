@@ -1,5 +1,8 @@
 ### Update
-6/29: **part0** exercise completed. Please open directory part0 and see the results.
+
+7/3: **part1** 14 exercies completed. Enter directory part1 to see the results.
+
+6/29: **part0** exercise completed. Enter directory part0 to see the results.
 
 ### Description
 This is a repository for submitting exercises in `Full Stack Open 2020` course of University of Helsinki. It's an online course and the site is here:
