@@ -1,4 +1,5 @@
 ### Update
+7/23: **part2** exeicises 2.15-2.18: phonebook step 7-10 completed.
 
 7/22: **part2** exeicises 2.11-2.14 completed mostly.
 
