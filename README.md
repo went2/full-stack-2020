@@ -1,5 +1,7 @@
 ### Update
 
+7/22: **part2** exeicises 2.11-2.14 completed mostly.
+
 7/16: **part2** exeicises 2.1-2.10 completed.
 
 7/3: **part1** all 14 exercies completed. Enter directory part1 to see the results.
