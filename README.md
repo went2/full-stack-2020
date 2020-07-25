@@ -1,8 +1,8 @@
 ### Update
+
+7/25:  **part2** all exercises completed. It's a long journey and I gain a lot!
 7/23: **part2** exeicises 2.15-2.18: phonebook step 7-10 completed.
-
 7/22: **part2** exeicises 2.11-2.14 completed mostly.
-
 7/16: **part2** exeicises 2.1-2.10 completed.
 
 7/3: **part1** all 14 exercies completed. Enter directory part1 to see the results.

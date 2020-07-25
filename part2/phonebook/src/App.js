@@ -3,6 +3,7 @@ import Filter from './components/Filter';
 import PersonForm from './components/PersonForm';
 import Persons from './components/Persons';
 import personService from './services/persons';
+import Message from './components/Message';
 
 const App = () => {
   const [ persons, setPersons ] = useState([]);
@@ -11,6 +12,8 @@ const App = () => {
   const [ newSex, setNewSex ] = useState('');
   const [ show, setShow ] = useState('all');
   const [ filter, setFilter ] = useState('');
+  const [ message, setMessage] = useState('');
+  const [ error, setError] = useState(0);
   
   const handleSubmit = event => {
     event.preventDefault();
@@ -29,12 +32,27 @@ const App = () => {
         .then(returnedData => {
           console.log('更新成功，返回数据',returnedData);
           setPersons(persons.map(person => person.id !== samePerson.id ? person : returnedData));
+          setMessage(`updated ${samePerson.name}`);
+          setTimeout(() => {
+            setMessage('')
+          }, 3000)
           setNewName('');
           setNewNumber('');
           setNewSex('');
-        }); 
+        })
+        .catch(() => {
+          // console.log(`error happens${err}`);
+          setMessage(`information of ${samePerson.name} has already been removed from server, please reflesh your page`);
+          setError(1);
+          setTimeout(() => {
+            setMessage('')
+          }, 3000)
+          setNewName('');
+          setNewNumber('');
+          setNewSex('');
+        });
      }
-     
+
     } else {
       const newPerson = {
         name: newName,
@@ -46,13 +64,18 @@ const App = () => {
         .then(returnedData => {
           console.log('新增成功，返回数据',returnedData);
           setPersons(persons.concat(returnedData));
+          setMessage(`added ${newName}`);
+          setTimeout(() => {
+            setMessage('')
+          }, 3000)
+
           setNewName('');
           setNewNumber('');
           setNewSex('');
         }) 
     }
   };
- 
+
   const compareName = (newName) => {
     let filtedperson = persons.find( person => person.name === newName );
     return filtedperson;
@@ -114,6 +137,10 @@ const App = () => {
   return (
     <div>
       <h2>Phonebook</h2>
+      <Message
+        message={message}
+        error={error}
+      />
       <Filter 
         handleFilter={ handleFilter }
         handleShow={ handleShow }
