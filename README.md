@@ -1,5 +1,9 @@
 ### Update
 
+10/20: **part6** finished all but 6.18.
+
+10/20: **part5** finish half exercises of part5. I want to give up frontend test at this time and will review this topic later.
+
 7/25:  **part2** all exercises completed. It's a long journey and I gain a lot!
 7/23: **part2** exeicises 2.15-2.18: phonebook step 7-10 completed.
 7/22: **part2** exeicises 2.11-2.14 completed mostly.
