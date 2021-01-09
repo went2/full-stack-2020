@@ -1,5 +1,5 @@
 ### Update
-2021/01/10: **part7**finished.
+2021/01/10: **part7** finished. And backend in part 4 is also updated.
 
 10/20: **part6** finished all but 6.18.
 
